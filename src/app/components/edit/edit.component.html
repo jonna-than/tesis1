@@ -1,0 +1,26 @@
+<h2>Editar Pago</h2>
+
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+
+  <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input formControlName="nombre" type="text" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">RUC</label>
+    <input formControlName="ruc" type="number" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Monto</label>
+    <input formControlName="monto" type="number" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Concepto</label>
+    <input formControlName="concepto" type="text" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Fecha</label>
+    <input formControlName="fecha" type="date" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
